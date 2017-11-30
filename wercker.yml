@@ -1,7 +1,7 @@
 box:
   id: alpine
 
-inject-secret:
+configure-namespace:
     box:
         id: alpine
         cmd: /bin/sh

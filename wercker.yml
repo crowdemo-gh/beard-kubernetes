@@ -6,6 +6,9 @@ configure-namespace:
         id: alpine
         cmd: /bin/sh
     steps:
+    - script:
+        name: print env
+        code: env
     - kubectl:
         name: ensure namespace exists
         server: $KUBERNETES_MASTER
